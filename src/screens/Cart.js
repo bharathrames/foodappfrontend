@@ -22,8 +22,8 @@ export default function Cart() {
     let userEmail = localStorage.getItem("userEmail");
     // console.log(data,localStorage.getItem("userEmail"),new Date())
     let response = await fetch("https://food-app-backend-iota.vercel.app/api/auth/orderData", {
-      // credentials: 'include',
-      // Origin:"http://localhost:3000/login",
+      credentials: 'include',
+      Origin:"https://recepieappes.netlify.app/login",
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

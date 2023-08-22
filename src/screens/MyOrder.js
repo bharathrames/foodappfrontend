@@ -9,8 +9,8 @@ export default function MyOrder() {
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'))
         await fetch("https://food-app-backend-iota.vercel.app/api/auth/myOrderData", {
-            // credentials: 'include',
-            // Origin:"http://localhost:3000/login",
+            credentials: 'include',
+            Origin:"https://recepieappes.netlify.app/login",
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

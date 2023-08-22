@@ -9,8 +9,8 @@ export default function Home() {
   const [search, setSearch] = useState('')
   const loadFoodItems = async () => {
     let response = await fetch("https://food-app-backend-iota.vercel.app/api/auth/foodData", {
-      // credentials: 'include',
-      // Origin:"https://recepieappes.netlify.app/login",
+      credentials: 'include',
+      Origin:"https://recepieappes.netlify.app/login",
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
